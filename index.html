@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- 
+
+User Story #1: My product landing page should have a header element with a corresponding id="header".
+
+User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+
+User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+
+User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+
+User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+
+User Story #6: I can watch an embedded product video with id="video".
+
+User Story #7: My landing page has a form element with a corresponding id="form".
+
+User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+
+User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+
+User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+
+User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+
+User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once.
+-->
+
+</head>
+<body>
+
+<div class="container">
+<header id="header"></header>       
+           
+            <nav class="nav-bar">
+                
+                        <div class="div__img">
+                            
+                            <a href="#pg1"><img id="header-img"
+                               src="https://raw.githubusercontent.com/erwin-hc/erwin-hc/main/Pizza-logo-vector-PNG.png"
+                               width="100"
+                               height="100">
+                            </a>
+                          
+                        
+                        </div>
+                        <div class="div__links">    
+                           
+                            <ul class="ul__links">
+                                <li class="li__links" class="nav-link"> <a href="#pg2">Sabores</a></li>
+                                <li class="li__links" class="nav-link"> <a href="#pg3">Delivery</a></li>
+                                <li class="li__links" class="nav-link"> <a href="#pg4">Valores</a></li>
+                            </ul>
+
+                        </div> 
+                        
+            </nav>       
+  
+         <!-- <iframe width="950" height="534" src="https://www.youtube.com/embed/fctrES1Ufew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->   
+            <section id="pg1" class="section__inicio"> 
+                       
+                        
+                        <div class="pg1__esquerdo"> 
+   
+                                <div class="video_wrap">
+                                    <h1>Larica's Pizzaria</h1> 
+                                        <iframe id="video" 
+                                            src="https://www.youtube.com/embed/fctrES1Ufew"
+                                            frameborder="0">
+                                        </iframe>
+                                </div>  
+                     
+                                <form id="form" class="formulario">
+                                <input class="input__email"
+                                    name="email"
+                                    id="email"
+                                    type="email"
+                                    placeholder="Cadastre o seu e-mail aqui!"
+                                    required />
+                                <input class="input__botao" id="submit" type="submit" value="Cadastrar" class="btn" />
+                                </form>
+                        </div> 
+
+                               <div class="pg1__divisao"></div>   
+
+                        <div class="pg__direito">
+
+                            <h1>Pizzaria</h1>
+                            <p>
+                            Uma pizaria (ou pizzaria do italiano pizzeria) é um estabelecimento,
+                            normalmente caracterizado como restaurante, cuja especialidade é a venda
+                            de pizzas ou demais tipos de massas. Também costuma oferecer serviço de
+                            entrega em domicílio.
+                            </p>
+
+                            <h1>Pizza</h1>
+                            <p>
+                            Pizza é uma preparação culinária que consiste em um disco de massa fermentada de farinha de trigo, 
+                            coberto com molho de tomate e os ingredientes variados que normalmente incluem algum tipo de queijo,
+                            carnes preparadas ou defumadas e ervas, normalmente orégano ou manjericão, tudo assado em forno.
+                            </p>
+
+
+
+
+                        </div>
+                   
+            </section> 
+
+            <section id="pg2" class="section__delivery">
+               
+                <div class="pg2__esquerdo">
+                     
+                    <div class="div__sabores">
+                            <figure>
+                                <img src="/images/calabresa-150x150.png">
+                                <figcaption>Calabresa</figcaption>
+                                <p>Ingredientes: Molho, muçarela, calabresa, cebola fatiada e orégano</p>
+                            </figure>
+                       </div>
+                       <div class="div__sabores">
+                            <figure>
+                                <img src="/images/calabresa-picante-150x150.png">
+                                <figcaption>Calabresa Picante</figcaption>
+                                <p>Ingredientes: Mussarela, calabresa forte, gorgonzola, orégano e base de molho de tomate.</p>
+                            </figure>
+                       </div>
+                       <div class="div__sabores">
+                            <figure>
+                                <img src="/images/cebolinha-manteiga-150x150.png">
+                                <figcaption>Cebolinha na Manteiga</figcaption>
+                                <p>Ingredientes: Mussarela, cebolinha na manteiga, pimentão, pimenta biquinho e base de molho de tomate</p>
+                            </figure>
+                       </div>
+                       <div class="div__sabores">
+                            <figure>
+                                <img src="/images/coracao-150x150.png">
+                                <figcaption>Coração</figcaption>
+                                <p>Ingredientes: Mussarela, coração, manjericão e base de molho de tomate.</p>
+                            </figure>
+                       </div>
+                </div>
+
+                <div class="pg2__divisao"></div>   
+
+                <div class="pg2__direito">
+                     
+                    <div class="div__sabores">
+                            <figure>
+                                <img src="/images/espinafre-150x150.png">
+                                <figcaption>Espinafre</figcaption>
+                                <p>Ingredientes: Mussarela, espinafre, requeijão e base de molho de tomate.</p>
+                            </figure>
+                       </div>
+                       <div class="div__sabores">
+                            <figure>
+                                <img src="/images/file-com-alho-poro-150x150.png">
+                                <figcaption>File com Alho Poró</figcaption>
+                                <p>Ingredientes: Mussarela, filé, alho frito, orégano e base de molho de tomate.</p>
+                            </figure>
+                       </div>
+                       <div class="div__sabores">
+                            <figure>
+                                <img src="/images/javali-ao-molho-de-vodka-150x150.png">
+                                <figcaption>Javali ao Molho de Vodka</figcaption>
+                                <p>Ingredientes: Mussarela, javali ao molho de vodka, cebola caramelada, orégano e base de molho de tomate.</p>
+                            </figure>
+                       </div>
+                       <div class="div__sabores">
+                            <figure>
+                                <img src="/images/camarao-150x150.png">
+                                <figcaption>Coramarão</figcaption>
+                                <p>Ingredientes: Mussarela, camarão aos 4 queijos, kani, parmesão, orégano e base de molho de tomate.</p>
+                            </figure>
+                       </div>
+                </div>
+           
+           
+            </section>
+
+            <section id="pg3" class="section__valores">
+                        <h1>Delivery</h1>
+            </section>
+   
+            <section id="pg4" class="section__valores">
+                         <h1>Valores</h1>
+            </section>
+     
+
+</div> <!-- Fecha container -->   
+    
+</body>
+</html>
