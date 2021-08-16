@@ -240,6 +240,13 @@ margin-left: 5%;
 #pg2 {
     background-color: var(--cor-section-2);
 }
+
+.pg2__divisao{
+    width: 5%;
+    height: 100%;
+ 
+}
+
 #pg3 {
     background-color: var(--cor-section-3);
 }
