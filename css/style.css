@@ -106,6 +106,15 @@ background-color: tomato;
 
 #pg1 {
     background-color: var(--cor-section-1); 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+
+    "esq dir"
+    
+    ""
+    ;
  
 }
 #pg1 h1 {
@@ -117,25 +126,31 @@ background-color: tomato;
 
 .pg1__esquerdo {
     margin-top: 150px;
-    margin-bottom: 2.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin-bottom: 40px;
+
+    padding: 5% 5%;
+
     width: 100%;
     height: 82%;
+
+    grid-template: esq;
+
+    border: 2px solid black;
 
 }
 
-
-
 .pg1__direito {
     margin-top: 150px;
-    margin-bottom: 2.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin-bottom: 40px;
+
+    padding: 5% 5%;
+
     width: 100%;
     height: 82%;
+
+    grid-template: dir;
+
+    border: 2px solid yellow;
 
 }
 
@@ -150,7 +165,7 @@ background-color: tomato;
 }
 
 .video_wrap {
-
+    width: 100%;
     position: relative;
     float: none;
     clear: both;    
@@ -158,7 +173,7 @@ background-color: tomato;
 }
 
 .video_wrap h1 {
-text-align: left;
+text-align: center;
 margin-left: 5%;
 }
 
@@ -180,7 +195,7 @@ margin-left: 5%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
+    width: 100%;
     height: 100%;
     
 
