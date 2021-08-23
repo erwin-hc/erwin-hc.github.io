@@ -154,7 +154,8 @@ section {
 
 #video {
   position: absolute;
-  border: 2px solid grey;
+  border: 2px solid #181818;
+  border-radius: 8px;
 
   top: 50%;
   left: 50%;
@@ -322,26 +323,73 @@ section {
  
 }
 
-
-
-
-
 /* SEGUNDA PAGINA -- FIM */
 /* TERCIRA PAGINA -- INICIO */
 
 #pg3 {
   background-color: var(--cor-section-3);
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "peq med gra";
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.pequena {
+  grid-template: peq;
+
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 8rem;
+
+  width: 100vw;
+  height: 80vh;
+
+  background-color: blue;
+
+  border: 2px solid #181818:
+}
+
+.media {
+  grid-template: med;
+
+
+  margin-top: 8rem;
+
+  width: 100vw;
+  height: 80vh;
+
+  background-color: red;
+
+  border: 2px solid #181818:
+}
+
+.grande {
+  grid-template: gra;
+
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 8rem;
+
+  width: 100vw;
+  height: 80vh;
+
+  background-color: yellow;
+
+  border: 2px solid #181818:
 }
 
 /* TERCIRA PAGINA -- FIM */
-/* QUARTA PAGINA -- INICIO*/
 
-#pg4 {
-  background-color: var(--cor-section-4);
-}
-/* QUARTA PAGINA -- FIM*/
 
-/*  */
+
 
 /*  Using min-width
 
