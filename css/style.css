@@ -16,75 +16,124 @@
   text-transform: uppercase;
 }
 html {
-  font-size: 12px;
+  font-size: 14px; 
   color: white;
+ 
 
 }
 
 .container {
+  
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+
+
+
 }
 section {
   /* PAGINAS */
   height: 100vh;
   scroll-snap-align: start;
 }
+
+/* ============================================================ */
+/* TAMANHO DOS TEXTOS */
+/* ============================================================ */
+ h1, a {
+ 
+  font-size: calc(2vw + .5vmin);
+
+  font-weight: 700;
+  letter-spacing:8px;
+  text-align: center;
+  color: white;
+
+  /* padding: .25rem 1.5rem; */
+
+}
+p, input {
+  font-size: calc(1.5vw + .20vmin);
+
+  /* font-weight: 400; */
+  letter-spacing:.1px;
+  text-align: center;
+  color: white;
+
+  /* padding: 1vw 1vw; */
+  
+}
+h5 {
+  font-size: calc(1.5vw + .5vmin);
+  
+}
 /* ============================================================ */
 /* NAVIBAR */
 /* ============================================================ */
 .nav-bar {
-  padding-top: 1px;  
+  /* padding-top: 1px;   */
   position: fixed;
   background-color: var(--cor-navbar);
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   width: 100vw;
-  height: 5rem;
+  height: auto;
 }
+
+/* .div__img {
+  display: flex;
+  justify-content: flex-start;
+
+} */
+
 #header-img {
-    padding: 5px;
-    border: 2px solid white;
+  
+  margin-top: 2%;
+  margin-left: 2%;
+
+    width: 30%;
+    height: auto;
+
 }
+
+
 #header-img:hover,
 #header-img:focus {
-  filter: grayscale(0);
   transform: scale(1.1);
   background: rgba(255,99,71,75%);
 }
 
-.div__links {
-  margin-right: 2%;
-}
-
-.div__img {
-  margin-left: 2%;
-  margin-top: 2px;
-}
 
 .ul__links {
   list-style: none;
   display: flex;
+  justify-content: flex-end; 
+
+}
+
+.li__links {
+ 
+  height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+
 }
 
 .li__links a {
-  font-weight: 900;
-  letter-spacing: 5px;
-  font-size: 3rem;
-
-  color: white;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-block; 
+  width: 100%;
+  padding-left: 2%;
+
 }
 
 .li__links a:hover {
-  background-color: rgba(255,99,71,75%);;
+  background-color: rgba(255,99,71,75%);
+  width: 100%;
+
 
 }
 /* ============================================================ */
@@ -131,21 +180,6 @@ section {
   background: rgba(255,99,71,75%);
 
 }
-#pg1 h1 {
-  font-weight: 900;
-  letter-spacing: 5px;
-  font-size: xx-large;
-  width: 100%;
-  text-align: center;
-}
-
-#pg1 p {
-  text-align: center;
-  margin: 20px;  
-  text-indent: 25px;
-  letter-spacing: 3px;
-  font-size: 1.5rem ;
-}
 
 .video_wrap {
   position: relative;
@@ -177,12 +211,14 @@ section {
 }
 
 .input__email {
+  text-transform: lowercase;
   margin-top: 2%;
   width: 90%;
   height: 3rem;
-  font-size: 1rem;
   border-radius: 8px;
-  border: 2px solid #181818;
+
+  border: 1px solid #181818;
+  
 }
 .input__botao {
   letter-spacing: 8px;
@@ -190,7 +226,6 @@ section {
   margin-top: 2%;
   width: 90%;
   height: 3rem;
-  font-size: 1rem;
   background-color: var(--cor-navbar);
   border: none;
   color: white;
@@ -199,7 +234,6 @@ section {
 
 .input__botao:hover {
   background-color: tomato;
-  /* transform: scale(1.02); */
   border: 2px solid #181818;
 }
 /* ============================================================ */
@@ -221,6 +255,9 @@ section {
     max-height: 85vh;
 
     text-align: center;
+    justify-content: space-evenly;
+
+    padding: 2rem 2rem;
     
     
 }
@@ -460,7 +497,11 @@ section {
 
 /* TERCIRA PAGINA -- FIM */
 
+
+
 @media (max-width: 500px) {
+
+
   .li__links a {
     display: none;
   }
@@ -468,7 +509,7 @@ section {
   #pg1 {
 
     width: 100%;
-    height: 100%;
+    height: 1200px;
  
     background-color: var(--cor-section-1);
     display: grid;
@@ -480,6 +521,7 @@ section {
     
   }
   .pg1__esquerdo {
+
     grid-template: esq;
     margin-top: 80px;
     
@@ -497,20 +539,6 @@ section {
   .pg1__esquerdo:hover {
     background: rgba(255,99,71,75%);
   
-  }
-  #pg1 h1 {
-    font-weight: 600;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    width: 100%;
-    text-align: center;
-  }
-  
-  #pg1 p {
-    text-align: center;
-    margin: 2%;  
-    letter-spacing: 3px;
-    font-size: 1rem ;
   }
 
   .pg1__direito {
