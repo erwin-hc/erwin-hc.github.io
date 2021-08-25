@@ -18,13 +18,11 @@
 html {
   font-size: 14px; 
   color: white;
- 
-
 }
 
 .container {
   
-  height: 100vh;
+  /* height: 100vh; */
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 
@@ -70,72 +68,125 @@ h5 {
 /* ============================================================ */
 /* NAVIBAR */
 /* ============================================================ */
+
 .nav-bar {
   /* padding-top: 1px;   */
   position: fixed;
   background-color: var(--cor-navbar);
   z-index: 100;
+  
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   
   width: 100vw;
+  max-width: 100vw;
   height: auto;
 }
-
-/* .div__img {
-  display: flex;
-  justify-content: flex-start;
-
-} */
-
-#header-img {
-  
-  margin-top: 2%;
-  margin-left: 2%;
+#header-img {  
+  margin-top: 5px;
+  margin-left: 5px;
 
     width: 30%;
     height: auto;
 
 }
 
+.div__img {
+  margin-right: 0;
+  width: 100%;
+  height: auto;
+}
 
-#header-img:hover,
-#header-img:focus {
-  transform: scale(1.1);
-  background: rgba(255,99,71,75%);
+.div__links {
+ margin-right: 15px;
+}
+.menu-hamburguer {
+
+ margin-right: 15px;
 }
 
 
 .ul__links {
   list-style: none;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: space-between; 
 
 }
 
 .li__links {
- 
-  height: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
+
+  padding-left: 5px;
+  padding-right: 5px;
 
 }
 
 .li__links a {
   text-decoration: none;
-  display: inline-block; 
-  width: 100%;
-  padding-left: 2%;
+  padding-left: 5px;
 
 }
 
 .li__links a:hover {
   background-color: rgba(255,99,71,75%);
-  width: 100%;
-
 
 }
+/* ============================================================ */
+/* MENU HAMBURGUER
+/* ============================================================ */
+.menu-hamburguer {
+  margin-right: 2%;
+  background-color: transparent;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#check-menu {
+  position: absolute;
+  opacity: 0;
+}
+.menu-hamburguer label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+.menu-hamburguer label span {
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transition: 0,25s ease-in-out;
+
+}
+.menu-hamburguer label span:nth-child(1){
+  top: 0;
+}
+.menu-hamburguer label span:nth-child(2){
+  top: 8px;
+  
+}
+.menu-hamburguer label span:nth-child(3){
+  top: 16px;    
+}
+
+#check-menu:checked + label span:nth-child(1) {
+transform: rotate(-45deg);
+top: 8px;
+}
+#check-menu:checked + label span:nth-child(2) {
+  opacity: 0;
+  
+}
+#check-menu:checked + label span:nth-child(3) {
+transform: rotate(45deg);
+top: 8px;
+  
+}
+
 /* ============================================================ */
 /* FIM NAV BAR */
 /* ============================================================ */
@@ -506,6 +557,9 @@ h5 {
     display: none;
   }
 
+  .menu-hamburguer {
+    display: flex;
+  }
   #pg1 {
 
     width: 100%;
