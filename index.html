@@ -1,269 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  
-  </head>
-  <body>
-    <div class="container">
-      <header id="header"></header>
+<html lang="pt-br">
 
-      <nav class="nav-bar">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<input type="checkbox" id="check-menu">
+
+    <header class="cabeçalho">  </header> 
+
+    <input type="checkbox" id="check-menu">
+            <nav class="nav-bar">   
+                <label for="check-menu"></label>
+
+                        <div class="div_nav-bar">
+                            <div class="div_img">
+                            <img
+                            id="header-img"
+                            src="https://fontmeme.com/permalink/210826/a406e603db002c2ab5a2338ff3b75d94.png"
+                            alt="logo"
+                
+                            />       
+                            </div>
+                            <div class="div_menu-hamburguer">                                
+                                <span style="height: 2.5px"></span>
+                                <span style="height: 2.5px"></span>
+                                <span style="height: 2.5px"></span>
+                            </div>
+
+                            <div class="div_links">
+                                <ul class="ul-links">
+                                    <li class="li-links">
+                                        <a href="#pg_1"><span id="text-link">Home</span></a>
+                                    </li>
+                                    <li class="li-links">
+                                        <a href="#pg_2"><span id="text-link">sabores</span></a>
+                                    </li>
+                                    <li class="li-links">
+                                        <a href="#pg_3"><span id="text-link">valores</span></a>   
+                                    </li>
+                                </ul>
+
+
+
+                        </div>    
+             </nav>      
+             
+
+<!-- <div class="container"> -->
+
+        <section class="flex-container home" id="pg_1">
+            <div class="flex-filhos pg_1_esq" >
+                            <h1>A origem da pizza</h1>
+                        <div class="video_wrap">
+                            <iframe id="video" src="https://www.youtube.com/embed/eh3LDicY_AY" frameborder="0"></iframe>                            
+                        </div>                                               
+                            <form class="form" class="formulario">
+                            <input type="email" name="email" id="input_email" placeholder=" Cadastre seu email para receber novidades!" required>
+                            <input type="submit" value="cadastrar" id="input_btn" >
+                            </form>
+            </div>
+
+            </div>
+            <div class="flex-filhos pg_1_dir" >
+                <article>
+                    <h1>Pizzaria</h1>
+                    <p>Uma pizaria (ou pizzaria do italiano pizzeria) é um estabelecimento, normalmente caracterizado como restaurante, cuja especialidade é a venda de pizzas ou demais tipos de massas. Também costuma oferecer serviço de entrega em domicílio.</p>
+                    <h1>Pizza</h1>
+                    <p>Pizza é uma preparação culinária que consiste em um disco de massa fermentada de farinha de trigo, coberto com molho de tomate e os ingredientes variados que normalmente incluem algum tipo de queijo, carnes preparadas ou defumadas e ervas, normalmente orégano ou manjericão, tudo assado em forno.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="flex-container sabores" id="pg_2">
             
-            <div class="div_nav_esq">
-                  <div class="div__img">
-                  <img
-                    id="header-img"
-                    src="https://fontmeme.com/permalink/210826/a406e603db002c2ab5a2338ff3b75d94.png"
-                    alt="logo"
-         
-                  />       
-                  </div>
+            <div class="pg_2_esq">
+                <div class="flex-filhos" id="esq">1</div>
+                <div class="flex-filhos" id="esq">2</div>
+                <div class="flex-filhos" id="esq">3</div>
+                <div class="flex-filhos" id="esq">4</div>
             </div>
-              
-              <div class="div_nav_dir">
-                
-                  <div class="div__links" class="nav-link">
-                    <a href="#pg1">Home</a>
-                  </div>
+            <div class="pg_2_dir">                      
+                <div class="flex-filhos" id="dir">5</div>
+                <div class="flex-filhos" id="dir">6</div>
+                <div class="flex-filhos" id="dir">7</div>
+                <div class="flex-filhos" id="dir">8</div>
+            </div>    
 
-                  <div class="div__links" class="nav-link">
-                    <a href="#pg2">Sabores</a>
-                  </div>
+        </section>
 
-                  <div class="div__links" class="nav-link">
-                    <a href="#pg3">Valores</a>
-                  </div>
-
-                  <div class="menu-hamburguer">
-                    <input type="checkbox" id="check-menu">
-                    <label for="check-menu">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </label>
-                  </div>
-
-            </div>
-
-      </nav>
-      
-      
+        <section class="flex-container valores" id="pg_3">
+            <div class="flex-filhos" id="tamanhos">Pequena</div>
+            <div class="flex-filhos" id="tamanhos">Media</div>
+            <div class="flex-filhos" id="tamanhos">Grande</div>
+        </section>
 
 
-      <section id="pg1" class="section__inicio">
-        <div class="pg1__esquerdo">
-                  
-          <div class="div_titulo"><h1>Pizzaria</h1></div>
-          <div class="video_wrap">
-            <iframe
-              id="video"
-              src="https://www.youtube.com/embed/eh3LDicY_AY"
-              frameborder="0"
-            >
-            </iframe>
-          </div>
+<!-- </div> -->
 
-          <div class="formulario">
-            <form id="form" class="formulario">
-            <input
-              class="input__email"
-              name="email"
-              id="email"
-              type="email"
-              placeholder=" Cadastre o seu e-mail aqui para receber novidades!"
-              required
-            />
-            <input
-              class="input__botao"
-              id="submit"
-              type="submit"
-              value="Cadastrar"
-              class="btn"
-            />
-            </form>
-          </div>
-        </div>
-
-        <div class="pg1__direito">
-          <h1>Pizzaria</h1>
-            <p>
-            Uma pizaria (ou pizzaria do italiano pizzeria) é um estabelecimento,
-            normalmente caracterizado como restaurante, cuja especialidade é a
-            venda de pizzas ou demais tipos de massas. Também costuma oferecer
-            serviço de entrega em domicílio.
-            </p>
-          <h1>Pizza</h1>
-            <p>
-            Pizza é uma preparação culinária que consiste em um disco de massa
-            fermentada de farinha de trigo, coberto com molho de tomate e os
-            ingredientes variados que normalmente incluem algum tipo de queijo,
-            carnes preparadas ou defumadas e ervas, normalmente orégano ou
-            manjericão, tudo assado em forno.
-            </p>
-        </div>
-      </section>
-
-      <section id="pg2" class="section__delivery">
-        <div class="pg2__esquerdo">
-          <div class="div__sabores">
-            <figure>
-              <img class="img_pizza" src="/images/calabresa-150x150.png" />
-              <figcaption>Calabresa</figcaption>
-            </figure>
-            <p>
-              Ingredientes:<br />
-              Molho, muçarela, calabresa, cebola fatiada e orégano
-            </p>
-          </div>
-
-          <div class="div__sabores">
-            <figure>
-              <img
-                class="img_pizza"
-                src="/images/calabresa-picante-150x150.png"
-              />
-              <figcaption>Calabresa Picante</figcaption>
-            </figure>
-            <p>
-              Ingredientes:<br />
-              Mussarela, calabresa forte, gorgonzola, orégano e base de molho de
-              tomate.
-            </p>
-          </div>
-
-          <div class="div__sabores">
-            <figure>
-              <img
-                class="img_pizza"
-                src="/images/cebolinha-manteiga-150x150.png"
-              />
-              <figcaption>Cebolinha na Manteiga</figcaption>
-            </figure>
-            <p>
-              Ingredientes:<br />
-              Mussarela, cebolinha na manteiga, pimentão, pimenta biquinho e
-              base de molho de tomate
-            </p>
-          </div>
-
-          <div class="div__sabores">
-            <figure>
-              <img class="img_pizza" src="/images/coracao-150x150.png" />
-              <figcaption>Coração</figcaption>
-            </figure>
-            <p>
-              Ingredientes:<br />
-              Mussarela, coração, manjericão e base de molho de tomate.
-            </p>
-          </div>
-        </div>
-
-        <div class="pg2__direito">
-          <div class="div__sabores">
-            <figure>
-              <img class="img_pizza" src="/images/espinafre-150x150.png" />
-              <figcaption>Espinafre</figcaption>
-            </figure>
-            <p>
-              Ingredientes:<br />
-              Mussarela, espinafre, requeijão e base de molho de tomate.
-            </p>
-          </div>
-          <div class="div__sabores">
-            <figure>
-              <img
-                class="img_pizza"
-                src="/images/file-com-alho-poro-150x150.png"
-              />
-              <figcaption>File com Alho</figcaption>
-            </figure>
-            <p>
-              Ingredientes:<br />
-              Mussarela, filé, alho frito, orégano e base de molho de tomate.
-            </p>
-          </div>
-          <div class="div__sabores">
-            <figure>
-              <img
-                class="img_pizza"
-                src="/images/javali-ao-molho-de-vodka-150x150.png"
-              />
-              <figcaption>Javali ao Molho</figcaption>
-            </figure>
-            <p>
-              Ingredientes:<br />
-              Mussarela, javali ao molho de vodka, cebola caramelada, orégano e
-              base de molho de tomate.
-            </p>
-          </div>
-          <div class="div__sabores">
-            <figure>
-              <img class="img_pizza" src="/images/camarao-150x150.png" />
-              <figcaption>Coramarão</figcaption>
-            </figure>
-            <p>
-              Ingredientes:<br />
-              Mussarela, camarão aos 4 queijos, kani, parmesão, orégano e base
-              de molho de tomate.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="pg3" class="section__valores">
-                
-                <div class="pequena">
-                    <img class="card-img" src="images/pizza-card.png">
-                 
-                    <div class="card-body">
-                      <h1 class="card-title">Pequena</h1>
-                      <ul>
-                          <li>Tamanho: 25 cm</li>
-                          <li>Serve: 1 A 2 pessoas</li> 
-                          <li>R$ 25,00</li>
-                       </ul>
-                    </div> 
-                </div>
-
-                <div class="media">
-                    <img class="card-img" src="images/pizza-card.png">
-                    <div class="card-body">
-                      <h1 class="card-title">Media</h1>
-                      <ul>
-                          <li>Tamanho: 35 cm</li>
-                          <li>Serve: 1 A 4 pessoas</li> 
-                          <li>R$ 35,00</li>
-                       </ul>
-                    </div> 
-                </div>
-
-                <div class="grande">
-                    <img class="card-img" src="images/pizza-card.png">
-                    <div class="card-body">
-                      <h1 class="card-title">Grande</h1>
-                      <ul>
-                          <li>Tamanho: 45 cm</li>
-                          <li>Serve: 1 A 6 pessoas</li> 
-                          <li>R$ 45,00</li>
-                       </ul>
-                    </div> 
-
-                    
-                </div>       
-       
-      </section>
+</body>
 
 
-    </div>
-    <!-- Fecha container -->
-  </body>
+
 </html>
