@@ -37,7 +37,7 @@ body {
 
 p,
 input {
-  font-size: calc(.50rem + .50vw);
+  font-size: calc(10px + .75vw);
   text-transform: uppercase;
   text-align: center;
 }
@@ -45,6 +45,7 @@ input {
 a,
 h1 {
   font-size: 1.25rem;
+  letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -72,7 +73,9 @@ h1 {
   background-color: #181818;
   width: 100%;
   height: 60px;
+  border: 1px solid var(--cor-laranja-1);
 }
+
 
 .div_links {
   display: flex;
@@ -121,8 +124,8 @@ h1 {
 
 .nav-bar a {
   display: flex;
-  color: white;
-  border: 2px solid white;
+  color: var(--cor-laranja-1);
+  border: 1px solid var(--cor-laranja-1);
   text-decoration: none;
   padding: 0.3vw;
   margin: 0.3vw;
@@ -164,7 +167,7 @@ h1 {
   border: none;
   width: 35px;
   height: 35px;
-  background: white;
+  background: var(--cor-laranja-1);
   transition: 0, 75s ease-in-out;
   padding: 2px;
   margin-top: 2px;
@@ -224,31 +227,30 @@ h1 {
   width: 100%;
   min-height: 100%;
   height: auto;
-}
-
+} 
 
 /* ---------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------*/
 /* PAGINA UM *******************************************/
 
 #pg_1 {
-  background-color: var(--cor-section-1);
+  /* background-color: var(--cor-section-1); */
+  
+  background-color: rgba(24, 24, 24, 90%);
   margin: 0 auto;
   width: 100%;
   height: auto; 
-  min-height: 100%;
- 
+  min-height: 100%; 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  /* padding:  1.5rem 5; */
 }
 
-#pg_1 .flex-filhos {
+#pg_1 .pg_1_dir,
+#pg_1 .pg_1_esq {
+
   background-color: rgba(24, 24, 24, 80%);
-  border: 1px solid #181818;
+  /* border: 1px solid #181818; */
+  box-shadow: 8px 8px hsl(10%, 10%, 10%) ;
   border-radius: 8px;
   margin: 0 auto;
   width: 95%;   
@@ -257,31 +259,36 @@ h1 {
 
   
 }
-#pg_1 .flex-filhos:first-child {
+#pg_1 .pg_1_esq {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
   background-color: rgba(24, 24, 24, 35%);;
   width:95%;
   height: 400px; 
   margin-top: 80px;
 }
 
-#pg_1 .flex-filhos:last-child {
-  margin-bottom: 80px;
-}
-
-.pg_1_esq {   
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.pg_1_dir {
+#pg_1 .pg_1_dir {
   padding-top: 25px;
   display: flex;
-  /* align-items: center; */
-  flex-direction: column;
-  justify-items: space-between;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column; 
+  margin-bottom: 50px;
+}
 
+.pg_1_dir div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;  
+  flex: 0 0 50%;
+  width: 100%;
 }
 
 #video {
@@ -293,39 +300,41 @@ h1 {
 
 }
 .form {
-  width: 98%;
-  margin-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+  width: 100%;
 }
 
 #input_email {
-font-size: 0.05rem;
+font-size: calc(10px + 1vw);
 text-transform: lowercase;
 margin-bottom: 1vw;
-width: 95%;
+width: 100%;
 border: 1px solid #181818;
 border-radius: 8px;
-height: calc(16px + 2vw);
+height: calc(25px + 1vw);
+min-height: 30px;
 }
 #input_btn {
 color: white;
-width: 95%;
-height: calc(16px + 2vw);
+width: 100%;
+font-size: calc(10px + 1vw);
+height: calc(25px + 1vw);
+min-height: 30px;
 border-radius: 8px;
 border: 1px solid rgb(24, 24, 24);
 background-color:var(--cor-laranja-1);
 }
+#input_btn:hover {
+  background-color: #181818;
+  border: 1px solid var(--cor-laranja-1);
+  color: var(--cor-laranja-1);
 
+  }
 /* ---------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------*/
 /* PAGINA DOIS *******************************************/
 
 #pg_2 {
-  background-color: var(--cor-section-2);
+  background-color: rgba(24, 24, 24, 90%);
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
@@ -375,7 +384,7 @@ background-color:var(--cor-laranja-1);
 /* PAGINA TRES *******************************************/
 
 #pg_3 {
-  background-color: var(--cor-section-3);
+  background-color: rgba(24, 24, 24, 90%);
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
@@ -432,8 +441,8 @@ background-color:var(--cor-laranja-1);
     font-size: 0.75em;
     display: flex;
     justify-content: flex-end;
-    color: white;
-    border: 1px solid white;
+    color: var(--cor-laranja-1);
+    border: 1px solid var(--cor-laranja-1);
     text-decoration: none;
   }
 
@@ -455,7 +464,6 @@ background-color:var(--cor-laranja-1);
     height: 80px;
     /* background-color: royalblue; */
   }
-
   .div_links {
     display: flex;
     justify-content: flex-end;
@@ -466,17 +474,14 @@ background-color:var(--cor-laranja-1);
   #pg_1 {
     flex-direction: row;
   }
-  #pg_1 .flex-filhos {
-    margin-top: 70px;
+  #pg_1 .pg_1_esq,
+  #pg_1 .pg_1_dir {
+    margin-top: 80px;
+    margin-bottom: 60px;
     width: 48vw;   
-    height: calc(90vh - 100px);
-    margin-bottom: 80px;
+    height: 85vh;
+    
   }
-  #pg_1 .flex-filhos:first-child {
-    margin-top: 70px;
-    width: 48vw;   
-    height: calc(90vh - 100px); 
-}
 
 
   #pg_2 {
