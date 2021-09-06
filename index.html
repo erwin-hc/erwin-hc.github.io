@@ -19,7 +19,7 @@
             <nav class="nav-bar">   
                 <label for="check-menu"></label>
 
-                        <div class="div_nav-bar">
+                        <div class="div_nav-bar" id="div_nav-bar">
                             <div class="div_img">
                             <img
                             id="header-img"
@@ -102,6 +102,17 @@
 
 </body>
 
-
+<script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("div_nav-bar").style.top = "0";
+                } else {
+                    document.getElementById("div_nav-bar").style.top = "-950px";
+                }
+                prevScrollpos = currentScrollPos;
+                } 
+</script>
 
 </html>
