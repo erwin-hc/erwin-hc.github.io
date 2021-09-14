@@ -1,120 +1,137 @@
+<!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mato-Verde (Produt Landing Page)</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<head>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pizzaria Landing Page</title>
-    </head>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <header class="header" id="header">
+      <nav>
+        <input type="checkbox" id="check-menu" />
+        <div class="nav-bar" id="nav-bar">
+          <label for="check-menu"></label>
 
-<body>
-<input type="checkbox" id="check-menu">
+          <div class="div_logo">
+            <img
+              id="header-img"
+              src="https://fontmeme.com/permalink/210909/180c6a559acde1022e9036d68f1e374f.png"
+              alt="blm-style"
+              border="2"
+            />
+          </div>
 
-    <header class="cabeçalho">  </header> 
+          <div class="div_links">
+            <ul class="ul_links nav-link">
+              <li class="li_links">
+                <a href="#produto"><span id="text-link">produto</span></a>
+              </li>
+              <li class="li_links">
+                <a href="#erva-mate"><span id="text-link">erva-mate</span></a>
+              </li>
+              <li class="li_links">
+                <a href="#preços"><span id="text-link">valores</span></a>
+              </li>
+            </ul>
+          </div>
 
-    <input type="checkbox" id="check-menu">
-            <nav class="nav-bar">   
-                <label for="check-menu"></label>
-
-                        <div class="div_nav-bar" id="div_nav-bar">
-                            <div class="div_img">
-                            <img
-                            id="header-img"
-                            src="https://fontmeme.com/permalink/210826/a406e603db002c2ab5a2338ff3b75d94.png"
-                            alt="logo"
-                
-                            />       
-                            </div>
-                            <div class="div_menu-hamburguer">                                
-                                <span style="height: 2.5px"></span>
-                                <span style="height: 2.5px"></span>
-                                <span style="height: 2.5px"></span>
-                            </div>
-
-                            <div class="div_links">
-                                <ul class="ul-links">
-                                    <li class="li-links">
-                                        <a href="#pg_1"><span id="text-link">Home</span></a>
-                                    </li>
-                                    <li class="li-links">
-                                        <a href="#pg_2"><span id="text-link">sabores</span></a>
-                                    </li>
-                                    <li class="li-links">
-                                        <a href="#pg_3"><span id="text-link">valores</span></a>   
-                                    </li>
-                                </ul>
-
-
-
-                        </div>    
-             </nav>      
-             
-
-<!-- <div class="container"> -->
-
-        <section class="flex-container home" id="pg_1">
-            <div class="flex-filhos pg_1_esq" >
-                            <h1>A origem da pizza</h1>
-                            <iframe id="video" src="https://www.youtube.com/embed/eh3LDicY_AY" frameborder="0"></iframe>  
+          <div class="div_menu-hamburguer">
+            <div class="menu-hamburguer">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-            </div>
-            <div class="flex-filhos pg_1_dir" >
-                <div>
-                    <h1>Pizzaria</h1>
-                    <p><br>Uma pizaria (ou pizzaria do italiano pizzeria) é um estabelecimento, normalmente caracterizado como restaurante, cuja especialidade é a venda de pizzas ou demais tipos de massas. Também costuma oferecer serviço de entrega em domicílio.</p>
-                </div>
-                <div>
-                <form class="form" class="formulario">
-                    <input type="email" name="email" id="input_email" placeholder=" Cadastre seu email para receber novidades!" required>
-                    <input type="submit" value="cadastrar" id="input_btn" >
-                 </form>
-                </div>
-            </div>
-        </section>
+    <div class="container">
+      <section id="produto" class="produto">
+        <h1>produto artesanal<br />100% orgânico</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Cadastre seu email!"
+            required
+          />
+          <input id="submit" type="submit" value="cadastrar" class="btn" />
+          <br />
+        </form>
 
-        <section class="flex-container sabores" id="pg_2">
-            
-            <div class="pg_2_esq">
-                <div class="flex-filhos" id="esq">1</div>
-                <div class="flex-filhos" id="esq">2</div>
-                <div class="flex-filhos" id="esq">3</div>
-                <div class="flex-filhos" id="esq">4</div>
-            </div>
-            <div class="pg_2_dir">                      
-                <div class="flex-filhos" id="dir">5</div>
-                <div class="flex-filhos" id="dir">6</div>
-                <div class="flex-filhos" id="dir">7</div>
-                <div class="flex-filhos" id="dir">8</div>
-            </div>    
+        <h2>nativa</h2>
+        <p>
+          A erva-mate nativa é feita com a planta Ilex paraguarienses colhida em
+          seu habitat natural. A produção desse tipo de erva é feita, em sua
+          maior parte, no Paraná. O resultado é uma erva suave, não tão amarga.
+          é bastante utilizada para fazer chimarrão.
+        </p>
+        <h2>Tradicional</h2>
+        <p>
+          A erva-mate tradicional é feita a partir da planta Ilex paraguarienses
+          cultivada para a produção. É bastante encontrada na região de Venâncio
+          Aires, no RS. Utilizada tanto para chimarrão quanto para tereré, é
+          feita moendo-se uma mistura com 70% de folhas e 30% de caule. Tem um
+          leve amargor intermediário.
+        </p>
+        <h2>Moída grossa</h2>
+        <p>
+          Essa denominação refere-se ao tipo de moagem a que é submetida a erva
+          após a desidratação e secagem. O processo faz com que pedaços das
+          folhas fiquem menos processados, mantendo maior o amargor.
+        </p>
+      </section>
+      <section id="erva-mate">
+        <h2>a história do chimarrão</h2>
+        <div class="video_wraper">
+          <iframe
+            width="550"
+            height="350"
+            src="https://www.youtube.com/embed/O7DtOdI8u_I"
+          >
+          </iframe>
+        </div>
+      </section>
 
-        </section>
+      <section class="cartoes">
+        <div class="cartao">
+          <h2>NATIVA</h2>
+          <ol>
+            <li>Peso: 1kg</li>
+            <li>Embalado a vácuo</li>
+            <li><span id="preço">R$ 12,00</span></li>
+          </ol>
+          <button class="btn">selecione</button>
+        </div>
 
-        <section class="flex-container valores" id="pg_3">
-            <div class="flex-filhos" id="tamanhos">Pequena</div>
-            <div class="flex-filhos" id="tamanhos">Media</div>
-            <div class="flex-filhos" id="tamanhos">Grande</div>
-        </section>
+        <div class="cartao">
+          <h2>TRADICIONAL</h2>
+          <ol>
+            <li>Peso: 1kg</li>
+            <li>Embalado a vácuo</li>
+            <li><span id="preço">R$ 14,00</span></li>
+          </ol>
+          <button class="btn">selecione</button>
+        </div>
 
-
-<!-- </div> -->
-
-</body>
-
-<!-- <script>
-                var prevScrollpos = window.pageYOffset;
-                window.onscroll = function() {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    document.getElementById("div_nav-bar").style.top = "0";
-                } else {
-                    document.getElementById("div_nav-bar").style.top = "-950px";
-                }
-                prevScrollpos = currentScrollPos;
-                } 
-</script> -->
-
+        <div class="cartao">
+          <h2>
+            MOÍDA<br />
+            GROSSA
+          </h2>
+          <ol>
+            <li>Peso: 1kg</li>
+            <li>Embalado a vácuo</li>
+            <li><span id="preço">R$ 16,00</span></li>
+          </ol>
+          <button class="btn">selecione</button>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
